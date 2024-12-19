@@ -1,0 +1,23 @@
+/* style.css */
+
+body {
+    background-color: #ffe6f2; /* Warna latar belakang pink muda */
+    color: #d5006d; /* Warna teks pink gelap */
+    font-family: Arial, sans-serif; /* Font yang digunakan */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #c71585; /* Warna judul pink tua */
+}
+
+a {
+    color: #ff1493; /* Warna tautan pink cerah */
+}
+
+a:hover {
+    color: #ff69b4; /* Warna tautan saat hover */
+}
+
+p {
+    line-height: 1.6; /* Jarak antar baris */
+}
