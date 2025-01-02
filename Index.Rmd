@@ -29,9 +29,6 @@ knitr::opts_chunk$set(echo = TRUE)
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents [@deCarvalho2012]. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-```{r}
-print("hello world")
-```
 
 ```{r cars}
 summary(cars)
@@ -47,7 +44,6 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-# Referensi
 ```{r}
 library(ggplot2)
 data <- data.frame(x=rnorm(100),y= rnorm(100))
@@ -76,4 +72,4 @@ ggplot(lizard, aes(x=total_length,y=weight))+
       labs(title = "plot titik", x="total_lenght", y="weight")+
         theme_classic()
 ```
-
+# Referensi
