@@ -1,23 +1,42 @@
 /* style.css */
 
 body {
-    background-color: #ffe6f2; /* Warna latar belakang pink muda */
-    color: #d5006d; /* Warna teks pink gelap */
+    background-color: #ffffff; /* Warna latar belakang putih */
+    color: #5e4b8c; /* Warna teks ungu gelap */
     font-family: Arial, sans-serif; /* Font yang digunakan */
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #c71585; /* Warna judul pink tua */
+    color: #4b3d6b; /* Warna judul ungu tua */
 }
 
 a {
-    color: #ff1493; /* Warna tautan pink cerah */
+    color: #9b59b6; /* Warna tautan ungu cerah */
 }
 
 a:hover {
-    color: #ff69b4; /* Warna tautan saat hover */
+    color: #8e44ad; /* Warna tautan saat hover */
 }
 
 p {
     line-height: 1.6; /* Jarak antar baris */
+    margin-bottom: 15px; /* Jarak antar paragraf */
+}
+
+button {
+    background-color: #5e4b8c; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    padding: 10px 15px; /* Padding dalam tombol */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+button:hover {
+    background-color: #4b3d6b; /* Warna latar belakang saat hover */
+}
+
+ul {
+    list-style-type: square; /* Mengubah jenis bullet */
+    padding-left: 20px; /* Memberikan padding di sebelah kiri */
 }
