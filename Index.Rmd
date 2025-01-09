@@ -86,13 +86,64 @@ library(readr)
 lizard <- read.csv("lizards.csv")
 View(lizard)
 ```
+
 ```{r}
 library(ggplot2)
 ggplot(lizard, aes(x=total_length,y=weight))+
       geom_point()+
-      labs(title = "plot titik", x="total_lenght", y="weight")+
+      labs(title = "plot titik", x="total_length", y="weight")+
         theme_classic()
 ```
+
+```{r}
+library(ggplot2)
+ggplot(lizard, aes(x=total_length,y=common_name))+
+      geom_jitter()+
+      labs(title = "Plot Titik", x="Total Length", y="Common Name")+
+        theme_classic()
+```
+
+```{r}
+library(ggplot2)
+ggplot(lizard, aes(x=total_length))+
+      geom_histogram()+
+      labs(title = "Plot Titik", x="Total Length")+
+        theme_classic()
+```
+
+```{r}
+library(ggplot2)
+ggplot(lizard, aes(y=common_name))+
+      geom_bar()+
+      labs(title = "Plot Titik", y="Common Name")+
+        theme_classic()
+```
+
+```{r}
+library(ggplot2)
+ggplot(lizard, aes(x=weight))+
+      geom_histogram(colour="orange",fill="pink",size=2,line=".")+
+      labs(title = "Plot Titik", x="Weight")+
+        theme_classic()
+```
+
+```{r}
+library(ggplot2)
+ggplot(lizard, aes(x=total_length,y=weight))+
+      geom_point(colour="red",shape=3)+
+      labs(title = "plot titik", x="total_length", y="weight")+
+        theme_classic()
+```
+
+```{r}
+library(ggplot2)
+ggplot(lizard, aes(x=total_length,y=weight,colour=common_name))+
+      geom_point(shape=9)+
+      labs(title = "plot titik", x="Total Length", y="Weight")+
+        theme_classic()
+        scale_color_manual(values = c("red", "blue", "green"))
+```
+
 
 # Read Data
 Dalam konteks ggplot2, **"read data"** merujuk pada proses memuat data ke dalam R sehingga dapat digunakan untuk membuat visualisasi. ggplot2 sendiri tidak memiliki fungsi khusus untuk membaca data, tetapi Anda biasanya akan menggunakan fungsi dari paket lain, seperti *readr*, *read.csv*, atau *data.table*, untuk memuat data ke dalam R sebelum menggunakannya dengan ggplot2.
